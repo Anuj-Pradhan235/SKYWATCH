@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title>
+    <style>
+      /* Styling for the form container */
+      .form-container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+      }
+
+      /* Styling for the form input */
+      .form-container input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      /* Styling for the submit button */
+      .form-container input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      /* Styling for the submit button when hovered */
+      .form-container input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body style="margin: 0px">
+    <div style="text-align: center; background-color: #333; padding: 2px">
+      <h1
+        style="
+          color: white;
+          font-family: 'Arial', sans-serif;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+        "
+      >
+        SkyWatch
+      </h1>
+    </div>
+    <div class="form-container">
+      <form action="/" method="post">
+        <label for="cityName">Enter a city name:</label>
+        <input
+          type="text"
+          id="city"
+          name="cityName"
+          placeholder="City name"
+          required
+        />
+        <br />
+        <input type="submit" value="Go" />
+      </form>
+    </div>
+  </body>
+</html>
